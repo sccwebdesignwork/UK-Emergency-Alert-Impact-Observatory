@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-08-18T16:30:00Z",
+  "study_status": "active",
+  "primary_endpoint": "Police-reported personal-injury collisions 0 to <15 minutes after alert activation",
+  "causal_claim_allowed": false,
+  "historical_results": [
+    {"event_id":"test_2023_gb","sent_at":"2023-04-23T14:59:00+01:00","event_count":3,"control_mean":4.8125,"rate_ratio":0.623377,"empirical_one_sided_p":0.784216},
+    {"event_id":"test_2025_gb","sent_at":"2025-09-07T15:00:00+01:00","event_count":7,"control_mean":5.5625,"rate_ratio":1.258427,"empirical_one_sided_p":0.196803}
+  ],
+  "exploratory_signal": {"event_id":"test_2025_gb","window":"0 to <5 minutes","event_count":5,"control_mean":2.875,"rate_ratio":1.73913,"empirical_one_sided_p":0.056943,"interpretation":"Exploratory only; not significant on the pre-specified primary endpoint and not replicated in 2023."},
+  "latest_case": {"event_id":"wildfire_2026_england","sent_at":"2026-08-14T19:01:00+01:00","status":"awaiting_2026_collision_data"},
+  "safeguarding_status": "awaiting_suitable_timestamped_aggregate_data"
+}
