@@ -1,0 +1,30 @@
+name: Bootstrap GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  enable-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require bootstrap token
+        shell: bash
+        env:
+          PAGES_ADMIN_TOKEN: ${{ secrets.PAGES_ADMIN_TOKEN }}
+        run: |
+          if [ -z "$PAGES_ADMIN_TOKEN" ]; then
+            echo "::error::Missing repository secret PAGES_ADMIN_TOKEN. Create a fine-grained PAT scoped only to this repository with Administration: write and Pages: write, add it as PAGES_ADMIN_TOKEN, then rerun this workflow."
+            exit 1
+          fi
+
+      - name: Enable GitHub Pages for GitHub Actions
+        uses: actions/configure-pages@v6
+        with:
+          token: ${{ secrets.PAGES_ADMIN_TOKEN }}
+          enablement: true
+
+      - name: Confirm Pages enabled
+        run: echo "GitHub Pages is enabled. The normal Pages deployment workflow can now run."
