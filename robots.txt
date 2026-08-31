@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sccwebdesignwork.github.io/UK-Emergency-Alert-Impact-Observatory/sitemap.xml
