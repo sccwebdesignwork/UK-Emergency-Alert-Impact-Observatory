@@ -1,5 +1,7 @@
 # UK Emergency Alert Impact Observatory
 
+[![SCC Nexus](https://sccnexus.co.uk/assets/brand/scc-nexus-wordmark.webp)](https://sccnexus.co.uk/)
+
 An **SCC Nexus** public-interest research observatory: https://sccnexus.co.uk/
 
 Public, evidence-led companion to the private UK Emergency Alert Impact Research engine. The programme follows the SCC Nexus discipline **Search · Corroborate · Communicate**.
