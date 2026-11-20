@@ -16,12 +16,19 @@ SCC Nexus project brief: https://sccnexus.co.uk/projects/emergency-alert-impact.
 
 News and verified source log: https://sccwebdesignwork.github.io/UK-Emergency-Alert-Impact-Observatory/news.html
 
-## Current status
+## Current status — 20 November 2026
 
-- 23 April 2023 national test: no positive collision excess detected on the pre-specified 0–<15 minute endpoint.
-- 7 September 2025 national test: higher than matched controls on the 0–<15 minute endpoint, but not statistically persuasive; a 0–<5 minute elevation remains exploratory.
-- 14 August 2026, 18:57 BST: Welsh-language wildfire broadcast to Wales, retained as a distinct timestamped case.
-- 14 August 2026, 19:01 BST: wildfire alert to England and Wales; primary collision analysis awaiting suitable 2026 collision data.
+This is a **status-only** public evidence surface. The older August figures remain in Git history but are withheld pending independent numerical reconciliation with the November research candidate. No scientific claim of alert-caused injury or safety is approved.
+
+- 2023 and 2025: retrospective national test analyses under review.
+- 8 January 2026 and 14 August 2026: official geographically targeted weather/wildfire alerts documented.
+- For actual warnings use the official https://www.gov.uk/alerts/current-alerts page.
+
+## Publication controls
+
+A `data/evidence.json` update is not enough to secure a static site with hard-coded results. The Pages workflow now validates **all public HTML**, the non-numeric status record and the front-end script before release. Run `python -m unittest discover -s tests -v` and `python scripts/validate_public_site.py .` before pushing.
+
+The private Research repository owns scientific code. The SCC Control Tower owns decisions; the Drive history retains original evidence. A green CI run is not peer-review or publication approval.
 
 ## Contact, corrections and collaboration
 
